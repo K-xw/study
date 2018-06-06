@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的购物车</title>
+	<link rel="stylesheet" href="styles/cart.css">
+	<script type="text/javascript" src="script/cart.js"></script>
+</head>
+<body>
+	<div class="content">
+		<!--头部导航条 -->
+		<div class="content_nav">
+			<a href="home.html" id="home">
+				<img src="images/home.png">
+			</a>
+			<nav class="nav_left">
+				<ul>
+					<li class="show_li">
+						<a href="woman.html">女士</a>
+						<div class="hide_femal hide_div" style="display: none;left: 5px;">
+							<ul class="hide_ul">
+								<li><a href="woman.html#clothes">女士服装</a></li>
+								<li><a href="woman.html#package">女士包装</a></li>
+								<li><a href="woman.html#other">女士配饰</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="show_li">
+						<a href="man.html">男士</a>
+						<div class="hide_man hide_div" style="display: none;left: 75px;">
+							<ul class="hide_ul">
+								<li><a href="man.html#clothes">男士服装</a></li>
+								<li><a href="man.html#package">男士包装</a></li>
+								<li><a href="man.html#other">男士配饰</a></li>
+							</ul>
+						</div>
+					</li>
+					<div class="separator"></div>
+					<li class="show_li"><a href="#">香氛</a></li>
+					<li class="show_li"><a href="#">护肤</a></li>
+					<div class="separator"></div>
+					<li class="show_li"><a href="jewelry.html">珠宝</a></li>
+					<li class="show_li"><a href="#">腕表</a></li>				
+				</ul>
+			</nav>
+			<nav class="nav_right">
+				<a href="#" id="cart">
+					<img src="images/2.png">
+				</a>
+				<ul>
+					<li class="show_li"><a href="user.html">登录</a></li>
+					<li class="show_li"><a href="myorder.html">订单</a></li>
+					<li class="show_li"><a href="about.html">关于</a></li>
+				</ul>
+			</nav>
+		</div>
+
+
+		<div class="list">
+			<h1>购物车</h1>
+
+			<table border="1" width="100%" cellspacing="0" background="black">
+				<tr>
+					<td colspan="7" align="right" style="font-size: 15pt; font-weight: 900">
+						<a href="javascript:alert('已清空购物车！');">清空购物车</a>
+					</td>
+				</tr>
+				<tr>
+					<th>商品</th>
+					
+					<th>单价</th>
+					<th>数量</th>
+					<th>小计</th>
+					<th>操作</th>
+				</tr>
+
+				<tr>
+					<td><div class="shop"><img src="images/cart/1.jpg"/></div></td>
+					
+					<td>39.9元</td>
+					<td>2</td>
+					<td>79.8元</td>
+					<td><a href="javascript:alert('删除购物项成功！');">删除</a></td>
+				</tr>
+				<tr>
+					<td><div class="shop"><img src="images/cart/2.jpg"/></div></td>
+					
+					<td>39.9元</td>
+					<td>2</td>
+					<td>79.8元</td>
+					<td><a href="javascript:alert('删除购物项成功！');">删除</a></td>
+				</tr>
+				<tr>
+					<td><div class="shop"><img src="images/cart/3.jpg"/></div></td>
+					
+					<td>39.9元</td>
+					<td>2</td>
+					<td>79.8元</td>
+					<td><a href="javascript:alert('删除购物项成功！');">删除</a></td>
+				</tr>
+				<tr>
+					<td><div class="shop"><img src="images/cart/4.jpg"/></div></td>
+					
+					<td>39.9元</td>
+					<td>2</td>
+					<td>79.8元</td>
+					<td><a href="javascript:alert('删除购物项成功！');">删除</a></td>
+				</tr>
+
+				<tr>
+					<td colspan="7" align="right" style="font-size: 15pt; font-weight: 900">
+						合计：319.2元
+					</td>
+				</tr>
+				<tr>
+					<td colspan="7" align="right" style="font-size: 15pt; font-weight: 900">
+						<a id="buy" href="neworder.html"></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+
+
+	</div>
+</body>
+</html>

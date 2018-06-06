@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="styles/home.css">
+	<script type="text/javascript" src="script/home.js"></script>
+</head>
+<body>
+	<div class="content">
+		<!--头部导航条 -->
+		<div class="content_nav">
+			<a href="home.html" id="home">
+				<img src="images/home.png">
+			</a>
+			<nav class="nav_left">
+				<ul>
+					<li class="show_li">
+						<a href="woman.html">女士</a>
+						<div class="hide_femal hide_div" style="display: none;left: 5px;">
+							<ul class="hide_ul">
+								<li><a href="woman.html#clothes">女士服装</a></li>
+								<li><a href="woman.html#package">女士包装</a></li>
+								<li><a href="woman.html#other">女士配饰</a></li>
+							</ul>
+						</div>
+					</li>
+
+					<li class="show_li">
+						<a href="man.html">男士</a>
+						<div class="hide_man hide_div" style="display: none;left: 75px;">
+							<ul class="hide_ul">
+								<li><a href="man.html#clothes">男士服装</a></li>
+								<li><a href="man.html#package">男士包装</a></li>
+								<li><a href="man.html#other">男士配饰</a></li>
+							</ul>
+						</div>
+					</li>
+					<div class="separator"></div>
+					<li class="show_li"><a href="#">香氛</a></li>
+					<li class="show_li"><a href="#">护肤</a></li>
+					<div class="separator"></div>
+					<li class="show_li"><a href="jewelry.html">珠宝</a></li>
+					<li class="show_li"><a href="#">腕表</a></li>				
+				</ul>
+			</nav>
+			<nav class="nav_right">
+				<a href="cart.html" id="cart">
+					<img src="images/2.png">
+				</a>
+				<ul>
+					<li class="show_li"><a href="user.html">登录</a></li>
+					<li class="show_li"><a href="myorder.html">订单</a></li>
+					<li class="show_li"><a href="about.html">关于</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<!--头部信息 -->
+		<div class="con_head">
+			<div class="tit">
+				XxX
+			</div>
+			<div class="search">
+				<input type="text">
+				<img src="images/search.png" >
+			</div>
+		</div>
+
+		<!--头部轮播-->
+		<div class="all" id="all">
+			<div class="screen" id="screen">
+			    <ul id="ul">
+			        <li><a href="#"><img src="images/autoplay/1.jpg" width="1400" height="500" /></a></li>
+			        <li><a href="#"><img src="images/autoplay/2.jpg" width="1400" height="500" /></a></li>
+			        <li><a href="#"><img src="images/autoplay/3.jpg" width="1400" height="500" /></a></li>
+			        <li><a href="#"><img src="images/autoplay/4.jpg" width="1400" height="500" /></a></li>
+			    </ul>
+	        	<ol></ol>
+	        	<div id="arr">
+	        		<span id="left">
+	        			<
+	        		</span>
+	        		<span id="right">
+	        			>	
+	        		</span>
+	        	</div>
+	    	</div>
+		</div>
+
+		<div class="category">
+
+			<div class="category_item_0">
+				<div class="category_cont">
+					<div class="cont_text">
+						<span class="sup">Style 风格</span>
+						<p class="cont">
+							“标新立异”在于美的清新有趣
+						</p>
+					</div>
+				</div>
+				<a class="img" href="#">
+					<div class="img_box">
+						<img src="images/man/4.png" class="lady">
+					</div>
+				</a>
+			</div>
+
+			<div class="category_item_1">
+				<div class="packbage_cont">
+					<div class="packbage_text">
+						<span class="sup">Style 风格</span>
+						<p class="cont">
+							“标新立异”在于美的清新有趣
+						</p>
+					</div>
+				</div>
+				<a class="img" href="#">
+					<div class="img_box">
+						<img src="images/woman/5.jpg" class="lady">
+					</div>
+				</a>
+			</div>
+
+			<div class="category_item_2">
+				<div class="glass_cont">
+					<div class="glass_text">
+						<span class="sup">Style 风格</span>
+						<p class="cont">
+							“标新立异”在于美的清新有趣
+						</p>
+					</div>
+				</div>
+				<a class="img" href="#">
+					<div class="img_box">
+						<img src="images/woman/4.jpg" class="lady">
+					</div>
+				</a>
+			</div>
+
+		</div>
+
+		<div class="foot">
+			<div class="foot_box">
+				<div class="foot_tip">
+					<span class="foot_tip_span">服务</span>
+					<ul>
+						<li><a href="#">客户关怀</a></li>
+						<li><a href="#">通用条款和条件</a></li>
+						<li><a href="#">隐私政策</a></li>
+						<li><a href="#">网站使用条款</a></li>
+					</ul>
+				</div>
+		
+				<div class="chat">
+					<span class="chat_span">联系我们</span>
+					<p><span>昵称：</span><input type="text"></p>
+					<p><span>手机号：</span><input type="tel"></p>
+					<p><span class="message">留言：</span><textarea name="" id="" cols="30" rows="10"></textarea></p>
+					<p class="btn">
+						<input type="submit" value="确定" id="sub">
+					</p>
+				</div>
+				<div class="foot_line_left"></div>
+				<div class="foot_tit"><span>XxX</span></div>
+				<div class="foot_line_right"></div>
+				<div class="time">
+					当前时间:<p id="time"></p>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+
+</body>
+</html>

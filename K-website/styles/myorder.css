@@ -1,0 +1,131 @@
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;
+		}
+		.content {
+			width: 100%;
+			height: auto;
+		}
+		.content_nav {
+			width: 100%;
+			height: 60px;
+			background-color: #000;
+			
+		}
+		#home {
+			margin-left: 50px;
+			float: left;
+		}
+		.nav_left {
+			float: left;
+		}
+		.content_nav ul {
+			position: relative;
+			float: right;
+		}
+		.show_li {
+			display: inline-block;
+			width: 40px;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			padding: 0 15px;
+		}
+		.show_li a {
+			color: #fff;
+			font-size: 14px;
+			transition: all 0.2s;
+		}
+		.show_li a:hover {
+			color: #ffd700;
+			font-size: 18px;
+		}
+		#cart {
+			padding: 5px 0;
+		    display: inline-block;
+			left: 20px;
+			position: relative;
+		}
+		.nav_right {
+			width: 300px;
+			float: right;
+			margin-right: 50px;
+		}
+		.separator {
+			display: inline-block;
+			width: 1px;
+			height: 16px;
+			background-color: #fff;
+			position: relative;
+			top: 4px;
+		}
+		.hide_div {			
+			width: 70px;
+			height: 110px;
+			position: absolute;
+			transition: all 1s;
+			z-index: 99;
+		} 
+
+		.hide_ul {
+			background-color: #fff;
+			box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
+		}	
+		.hide_ul li {
+			height: 36px;
+			line-height: 36px;
+			text-align: center;
+			font-size: 16px;
+		}
+		.hide_ul li a {
+			color: #000;
+			font-size: 13px;
+		}
+		.hide_ul li a:hover {
+			color: #ffd700;
+			font-size: 15px;
+		} 		
+
+.list {
+	width: 1200px;
+	height: 1000px;
+	margin: 25px auto;
+}
+.list h1 {
+	width: 150px;
+	margin: 5px auto;
+}
+	.shop {
+		margin:20px;
+		border: solid 2px gray;
+		width: 75px;
+		height: 75px;
+		text-align: center;
+	}
+th {
+	width: 200px;
+}
+td {
+	font-size: 35px;
+}
+	
+	#buy {
+		background: url('../images/all.png') no-repeat;
+		display: inline-block;
+		
+		background-position: 0 -902px;
+		margin-left: 30px;
+		height: 36px;
+		width: 146px;
+	}
+	#buy:hover {
+		background: url('../images/all.png') no-repeat;
+		display: inline-block;
+		
+		background-position: 0 -938px;
+		margin-left: 30px;
+		height: 36px;
+		width: 146px;
+	}

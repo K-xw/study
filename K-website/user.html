@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			list-style: none;
+		}
+		.content{
+			width: 304px;
+			height: 250px;
+			top: 200px;
+			left: 60%;
+			box-shadow: 0 0 17px #ffffff;
+			position: relative;
+		}
+		.top {
+			width: 100%;
+			background-color: #f3f3f3ab;
+		}
+		.top ul {
+			position: relative;
+		}
+		.top li {
+			display: inline-block;
+			width: 100px;
+			padding: 10px 25px;
+			text-align: center;
+			background-color: #fff;
+		}
+		.box form {
+			height: 200px;
+		}
+		.box p {
+			margin: 8px 10px;
+			font-size: 15px;
+			position: relative;
+		}
+		.box span {
+			width: 70px;
+			display: inline-block;
+			text-align: right;
+			padding-right :10px; 
+			color: #fff;
+		}
+		.normal input {
+			width: 190px;
+			height: 18px;
+			margin: 3px 2px;
+			border: 1px solid #38a1bf;
+		}
+		.login {
+			width: 70px;
+			height: 30px;
+			margin: 0 35%;
+			font-size: 15px;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: -1;
+			filter: blur(1px) brightness(105%);
+			-webkit-filter: blur(1px) brightness(105%);  /* chrome, opera */
+			 -ms-filter: blur(1px) brightness(105%);
+			 -moz-filter: blur(1px) brightness(105%);
+
+		}
+	</style>
+
+	<script>
+		window.onload = function() {
+			var lis = document.getElementById("top").getElementsByTagName("li");
+			var boxs = document.getElementsByClassName("box");
+
+			lis[0].onclick = function() {
+				for (var j = 0; j < boxs.length; j++) {
+						boxs[j].style.display = 'none';
+					}
+				boxs[0].style.display = 'block';
+				this.style.backgroundColor = '#fff';
+				lis[1].style.backgroundColor = '#f3f3f3ab';
+			}
+			lis[1].onclick = function() {
+				for (var j = 0; j < boxs.length; j++) {
+						boxs[j].style.display = 'none';
+					}
+				boxs[1].style.display = 'block';
+				this.style.backgroundColor = '#fff';
+				lis[0].style.backgroundColor = '#f3f3f3ab';
+			}
+		}
+	</script>
+</head>
+<body>
+	<img src="images/3.jpg" alt="">
+	<div class="content">
+		<div class="top" id="top">
+			<ul>
+				<li>登陆</li><li style="background-color: #f3f3f3ab">注册</li>
+			</ul>
+		</div>
+
+		<div class="box" style="display: block">
+			<form action="home.html" method="post">
+				<p style="margin: 35px 10px"><span>用户名</span><input type="text" name="username"></p>
+				<p style="margin: 35px 10px"><span>密码</span><input type="password" name="password"></p>
+				 <input type="submit" name="submit" value="登陆" class="login"> 
+			</form>
+		</div>
+
+		<div class="box" style="display: none">
+			<form action="home.html" method="post">
+				<p class="normal"><span>用户名</span><input type="text" name="username"></p>
+				<p class="normal"><span>密码</span><input type="password" name="password"></p>
+				<p class="normal"><span>确认密码</span><input type="password" name="confirm"></p>
+				<p class="normal"><span>邮箱</span><input type="email" name="email"></p>
+				<p style="color: #fff"><span>性别</span><input type="radio" name="sex" value="male">男
+									<input type="radio" name="sex" value="female">女
+				</p>
+				 <input type="submit" name="submit" value="注册" class="login">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
